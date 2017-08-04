@@ -1,0 +1,13 @@
+---
+# tasks file for fqn
+- name: change hostname
+  hostname:
+    name: "{{ fqn_hostname }}"
+
+- name: change fqn
+  lineinfile:
+    dest: /etc/hosts
+    regexp: '^{{ fqn_ip }}'
+    line: '{{ fqn_ip }} {{ fqn_full }} {{ fqn_hostname }}'
+    state: present    
+
