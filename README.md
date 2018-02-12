@@ -12,6 +12,7 @@ Role Variables
 --------------
 
 - fqn_hostname: Hostname. Example:'web1'
+- fqn_only_hostname: Set only hostname and not modify /etc/hosts file. Example: false
 - fqn_full: Fully qualified name. Example:'web1.mydomain.com'
 - fqn_ip: Ip addres of hostname. Example:'54.54.54.54'
 
