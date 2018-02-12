@@ -9,5 +9,6 @@
     dest: /etc/hosts
     regexp: '^{{ fqn_ip }}'
     line: '{{ fqn_ip }} {{ fqn_full }} {{ fqn_hostname }}'
-    state: present    
+    state: present
+  when: not fqn_only_hostname    
 
