@@ -1,3 +1,4 @@
 fqn_hostname: 'web1'
+fqn_only_hostname: true
 fqn_full: 'web1.mydomain.com'
 fqn_ip: '54.54.54.54'
